@@ -37,3 +37,27 @@ Es una ventana emergente sobre nuestra aplicación o página que intenta llamar 
 
 
 ### Beneficios, cuando utilizarlo y por qué.
+
+El beneficio principal es mantener el foco del usuario. Estará mirando donde quieres que mire y tenga que estar concentrado. Si hay que interactuar para subir una publicación o imagen a su red social, esto hará que no se distraiga con el resto de la página y que tenga a su alcance todo lo necesario para ese propósito.
+
+Con esto también conseguimos un beneficio de rendimiento y de maquetación en la página, porque sólo cargaremos esa sección cuando sea necesaria, y quedará super puesta a la principal, sin tener que cargar una página nueva ni tener que desplazar o maquetar ora vez los objetos de la página.
+
+Esto es útil cuando queremos añadir funcionalidades e interfaces no presentes, como la de publicar un documento o subir una imagen, como habíamos comentado, o visualizar los detalles de un producto en una tienda online. También al iniciar una parte crítica en la que tengamos que estar manteniendo el foco, se me viene a la cabeza los pagos mediante tarjeta bancaria en las compras online.
+
+
+### Implementación
+
+Hay muchas librerías que nos permiten utilizar modales en nuestras aplicaciones web. Jordan utiliza la React Modal Library. Suficiente para hacer efectos muy llamativos y funcionales.
+
+Se instala: 
+```
+npm i react-modal
+```
+
+Y su uso es fectivo siempre que isOpen sea true. Lo que nos da la opción de jugar con esta propiedad booleana para mostrarlo o no.
+
+```
+<ReactModal isOpen={true}>
+    <h1>I'm in a modal!</h1>
+  </ReactModal>
+```
